@@ -8,4 +8,3 @@ loop:true
  function show(){
     alert("Hello, welcome to my website!");
  }
- 

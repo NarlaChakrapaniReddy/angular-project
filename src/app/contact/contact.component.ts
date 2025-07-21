@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-declare function show(): void;
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import Typed from 'typed.js';
 
 @Component({
   selector: 'app-contact',
@@ -7,14 +7,17 @@ declare function show(): void;
   styleUrl: './contact.component.css'
 })
 export class ContactComponent implements OnInit {
+  @ViewChild('typedText', { static: true }) typedText!: ElementRef;
   ngOnInit(): void {
-    const script=document.createElement('script');
-    script.src='assets/myscript.js';
-    script.async=true;
-    document.body.appendChild(script);
-  }
-  callShowFunction() {
-    show();
-  }
-
+    setTimeout(() => {
+      const options = {
+        strings: ['Full Stack Developer', 'Java Developer', 'AWS Engineer'],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true
+      };
+      new Typed(this.typedText.nativeElement, options);
+    },0);
+   
+}
 }

@@ -4,8 +4,8 @@
     border:10px solid yellow;
     border-radius:50%;
     margin:auto;
-    height:500px;
-    width:500px;
+    height:400px;
+    width:400px;
     display:flex;
     justify-content:center;
     align-items: center;
@@ -14,7 +14,7 @@
 .btn-box
 { 
     text-decoration:none;
-    background-color:blue;
+    background-color:rgb(234, 6, 246);
     color:white;
     border-radius:5px;
     display:flex;
@@ -22,4 +22,8 @@
     align-items: center;
     width:300px;
     text-align: center;
+}
+.text{
+    color:rgb(8, 0, 255);
+    font-weight: bold;
 }
