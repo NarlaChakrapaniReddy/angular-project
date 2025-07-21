@@ -1,25 +1,35 @@
 <header class="header">
   <div class="container">
-    <h4>RGM Technologies</h4>
+    <h4>RGM CSE Department</h4>
   </div>
 </header>
-<h3 class="text-center text-primary">welcome to Employee Management System</h3>
-<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-  <ul class="navbar-nav">
-    <li class="nav-item">
+<h3 style="background-color:aqua;color:red; text-align:center;">Welcome to Employee Management System</h3>
+<nav  style="background-color:#19b2ff;"class="navbar navbar-expand-sm">
+<div class="container-fluid">
+    <ul class="navbar-nav">
+    <li class="nav-item fw-bold">
       <a routerLink="employees" routerLinkActive="active" class="nav-link">Employee List</a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item fw-bold">
       <a routerLink="create-employee" routerLinkActive="active" class="nav-link">Add Employee</a>
     </li>
+    <li class="nav-item fw-bold">
+      <a routerLink="aboutus" routerLinkActive="active" class="nav-link">About US</a>
+    </li>
   </ul>
-   
+  <ul class="nav navbar-nav navbar-right">
+    
+    <li class="nav-item fw-bold">
+    
+      <a routerLink="contact" routerLinkActive="active" class="nav-link">Contact Developer</a>
+    </li>
+    <span class="material-icons" style="padding-top:7px;">person</span>
+  </ul>
+</div>
 </nav>
 <div class="container">
   <router-outlet> </router-outlet>
-  </div>
-<header class="footer">
-  <div class="container">
-    <span>All Rights Reserved to RGM Technologies</span>
-  </div>
-</header>
+</div>
+<footer class="footer">
+    <span>All Rights Reserved to RGM CSE Department</span>
+</footer>

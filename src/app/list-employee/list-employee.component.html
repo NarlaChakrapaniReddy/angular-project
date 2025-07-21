@@ -1,5 +1,5 @@
-<table class="table table-striped">
-<thead>
+<table class="table table-striped" style="background-color:rgb(0, 4, 255); color:red;">
+<thead class="rgm">
 <tr>
 <th>Employee ID</th>    
 <th>Employee Name</th>
@@ -15,8 +15,8 @@
 <td>{{employee.designation}}</td>
 <td>{{employee.empSalary}}</td>
 <td>
-<button (click)="updateEmployee(employee.empId)" class="btn btn-success">Update</button>
-<button (click)="deleteEmployee(employee.empId)"class="btn btn-danger" style="margin-left:10px">Delete</button>
+<button (click)="updateEmployee(employee.empId)" class="btn btn-success" style="border-radius:13px;">Update</button>
+<button (click)="deleteEmployee(employee.empId)"class="btn btn-danger" style="margin-left:10px;border-radius:13px;">Delete</button>
 </td>
 </tr>
 </tbody>
