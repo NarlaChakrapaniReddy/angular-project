@@ -8,7 +8,7 @@ import { Employee } from './employee';
 })
 export class EmployeeService {
 
-  private baseURL="http://localhost:8080/employees";
+  private baseURL="https://employee-management-11ka.onrender.com/employees";
   constructor(private httpClient : HttpClient) { }
 
   getEmployeeList() : Observable<Employee[]>{
